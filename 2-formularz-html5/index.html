@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz dane i książki</title>
+</head>
+
+<body>
+    <form action="mailto:scofit@wp.pl" method="POST" autocomplete="on">
+
+        <h1>A Simple Form</h1>
+        <p>Form Fundamentals</p>
+
+<!--      customer  info-->
+        
+        <fieldset>
+            <legend>Customer-Info</legend><br>
+
+            <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="name" autofocus required><br>
+                <br>
+
+            <label for="telephone">Telephone:</label>
+                <input type="tel" id="telephone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="1-234-567-8910" required><br>
+                <br>
+
+            <label for="email">E-mail address:</label>
+                <input type="email" id="email" value="email" placeholder="email-1,email-2" multiple required>
+        </fieldset>
+        <br>
+
+<!--      books-->
+        
+        <fieldset>
+            <legend>Books</legend>
+
+            <label for="book"></label>
+                <input list="books" id="book" name="book">
+                    <datalist id="books">
+                         <option value="book-a">
+                         <option value="book-b">
+                         <option value="book-c">
+                         <option value="book-d">
+                         <option value="book-e">
+                
+                     </datalist>
+
+            <label for="quanity">Quanity (Maximum 5):</label>
+                <input type="number" id="quanity" min="1" max="5">
+
+        </fieldset>
+        <br>
+        
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
