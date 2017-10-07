@@ -3,49 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Formularz rejestracyjny</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <form action="https://formspree.io/scofit@wp.pl" method="POST">
         
-        <label for="imie">Imię:</label><br/>
-            <input type="text" name="imie" id="imie"><br/>
+        <label for="imie">Imię:</label>
+            <input type="text" name="imie" id="imie">
         
-        <label for="nazwisko">Nazwisko:</label><br/>
-            <input type="text" name="nazwisko" id="nazwisko"><br/>
+        <label for="nazwisko">Nazwisko:</label>
+            <input type="text" name="nazwisko" id="nazwisko">
         
-        <label for="email">E-mail:</label><br/>
-            <input type="email" name="email" id="email"><br/>
+        <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
         
-        <label for="tel">Telefon:</label><br/>
-            <input type="tel" name="tel" id="tel" maxlength="9"><br/>
-        <br>
+        <label for="tel">Telefon:</label>
+            <input type="tel" name="tel" id="tel" maxlength="9">
+        
              
-        <label for="miasto">Wybór miasta:</label><br/>
+        <label for="miasto">Wybór miasta:</label>
             <select name="miasto" id="miasto">
             <option value="krakow">Kraków</option>
             <option value="warszawa">Warszawa</option>
             <option value="gdansk">Gdańsk</option>
-            </select><br/>
-        
-        <p>Płeć:</p>
-        <label for="kobieta">Kobieta</label>
-            <input type="radio" name="gender" id="kobieta"><br/>
+            </select>
+    
+        <label>Płeć:</label>
+        <label for="kobieta"><input type="radio" name="gender" id="kobieta">Kobieta</label>
             
-        <label for="mezczyzna">Mężczyzna</label>
-            <input type="radio" name="gender" id="mezczyzna"><br/>
+            
+        <label for="mezczyzna"><input type="radio" name="gender" id="mezczyzna">Mężczyzna</label>
+            
         
-        <br/>
+    
         
-        <label for="wiadomosc"></label>
-            <textarea name="wiadomosc" id="wiadomosc" cols="20" rows="5">Wiadomość</textarea><br>
-        <br> 
+        <label for="wiadomosc">Wiadomość :</label>
+            <textarea name="wiadomosc" id="wiadomosc" cols="20" rows="5"></textarea>
+       
         
         <label for="zgoda">Wyrażam zgodę na przetwarzanie danych osobowych</label>
-            <input type="checkbox" name="zgoda" id="zgoda"><br>
-        <br>
+            <input type="checkbox" name="zgoda" id="zgoda">
+       
         
-        <input type="submit" value="Wyślij">
+        <input type="submit" value="send">
         
     </form>    
 
