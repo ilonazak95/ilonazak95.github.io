@@ -154,11 +154,11 @@ div:empty {
 #kontener .inner:nth-child(even) {
     background-color: yellow;
 }
-
+/*żeby wylaczyc oplywanie nalezy skorzystac z wlasciwosci clear*/
 .clear {
     clear: both;
     display: block;
-    width: 100%;
+/*    width: 100%;*/
 }
 /*selektory atrybutów*/
 /*selector[attr]- okresla elementy, ktore maja atrybut attr, niezaleznie od ich wartosci*/
@@ -189,5 +189,48 @@ input[type^="pocz"] {
 input[type$="koniec"] {
     background-color: blue;
 }
+
+/*centrowanie*/
+
+#centrowanie-bloka {
+    background-color: aqua;
+}
+#centrowanie-bloka .inner{
+    width: 30%;
+    margin: 0 auto;
+}
+#floated img {
+    float: left;
+}
+img {
+    width: 200px;
+}
+/*tranzycje*/
+
+#tranzycje .inner-1,
+#tranzycje .inner-2 {
+    height: 300px;
+    width: 300px;
+}
+
+#tranzycje .inner-1 {
+    background-color: green;
+/*
+    transition-property: width;
+    transition-duration: 4s;
+    transition-delay: 2s;
+    transition-timing-function: linear;
+*/
+    transition: all 0.4s;
+}
+#tranzycje .inner-1:hover {
+    background-color: blue;
+    width: 600px;
+}
+
+#tranzycje .inner-2 {
+    background-color: red;
+}
+
 
 
