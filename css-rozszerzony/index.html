@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--   selektor elementu-->
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio consequatur, adipisci tenetur nihil nobis, totam laboriosam quibusdam porro libero ducimus?</p>
+   
+<!--   selektor identyfikatora i klasy-->
+   <div id="testowy">
+       <p class="testowy-inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error molestias quisquam, at dicta illo temporibus voluptatum ipsa ratione id fuga?</p>
+   </div>
+   
+<!--   selektor potomka-->
+   <div id="selektor-potomka">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit possimus doloremque facere impedit. Itaque modi minima nam repellat impedit facilis earum, dignissimos voluptatibus possimus. Voluptate magnam repellat neque repudiandae autem!</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit possimus doloremque facere impedit. Itaque modi minima nam repellat impedit facilis earum, dignissimos voluptatibus possimus. Voluptate magnam repellat neque repudiandae autem!</p>
+   </div>
+<!--   selektor braci-->
+    <div id="selektor-dziecka">
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, cum.</span>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+<!--   selektor braci-->
+    <div id="selektor-braci">
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, cum.</span>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+   
+<!--pseudoelementy :before/:after -->
+   <div id="pseudoelementy">
+       <h1>before/after</h1>
+       <p class="first-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint officia culpa expedita voluptatem totam quidem odio, suscipit fugiat assumenda voluptate, alias labore itaque perspiciatis possimus necessitatibus iusto saepe, provident porro.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint officia culpa expedita voluptatem totam quidem odio, suscipit fugiat assumenda voluptate, alias labore itaque perspiciatis possimus necessitatibus iusto saepe, provident porro.</p>
+   </div>
+   
+    <div id="linki" lang="pl">
+       <a href="#">link 1</a>
+       <a href="#">link 2</a>
+       <a href="#">link 3</a>
+       <a href="#">link 4</a>
+       <a href="#testowy">link 5</a>
+   </div>
+   
+<!--:focus-->
+    <div id="inputy">
+        <input type="poczatek text">
+        <input type="mail">
+        <input type="tel">
+        <input type="text opis">
+        <input type="text piaty koniec">
+        <input type="submit" value="wyślij">
+    </div>
+    
+<!--    :first/:last-child-->
+    <div id="lista-dzieci">
+        <ul>
+            <li class="list-item">list item1</li>
+            <li class="list-item">list item2</li>
+            <li class="list-item">list item3</li>
+            <li class="list-item">list item4</li>
+            <li class="list-item">list item5</li>
+        </ul>
+    </div>
+<!--    :only-child-->
+    <div id="jedyne-dziecko">
+        <span>Lorem ipsum dolor sit amet.</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim obcaecati repellendus architecto vero nesciunt numquam.</p>
+    </div>
+    
+<!--    :empty--> 
+    <div id="empty"></div>
+
+   
+    <div id="kontener">
+        <div class="inner">Lorem ipsum dolor sit amet.</div>
+        <div class="inner">Lorem ipsum dolor sit amet.</div>
+        <div class="inner">Lorem ipsum dolor sit amet.</div>
+        <div class="inner">Lorem ipsum dolor sit amet.</div>
+        <div class="inner">Lorem ipsum dolor sit amet.</div>
+        <div class="inner">Lorem ipsum dolor sit amet.</div>
+        <div class="inner">Lorem ipsum dolor sit amet.</div>
+        <div class="inner">Lorem ipsum dolor sit amet.</div>
+        <div class="inner">Lorem ipsum dolor sit amet.</div>
+        <span class="clear"></span>
+    </div>
+        
+</body>
+</html>
