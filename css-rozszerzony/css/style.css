@@ -122,12 +122,14 @@ div:lang(pl) {
     color: green;
 }
 /*pseudoklasa :empty okresla element ktory nie posiada ZADNEGO CONTENTU */
+/*
 div:empty {
     display: block;
     width: 300px;
     height: 300px;
     background-color: red;
 }
+*/
 
 /*pseudoklasy :nth-child() i :nth-last-child () sluza do okreslania elementow dzieci,mozemy wskazac konretne dziecko, parzyste/nieparzyste dzieci lub utworzyc wzor, ktore dzieci i co ile maja byc wybierane*/
 
@@ -232,5 +234,35 @@ img {
     background-color: red;
 }
 
+
+/*https://www.koty.pl/wp-content/uploads/2008/05/shutterstock_147404390.jpg*/
+/*http://polki.pl/foto/4_3_SMALL/czy-wiesz-dlaczego-pies-merda-ogonem-1559030.jpg*/
+/*wlasciwosci tla*/
+#tlo {
+    width: 50%;
+    height: 600px;
+/*kolor na obrazku
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(10,255,100,0.6)),
+        url(https://www.koty.pl/wp-content/uploads/2008/05/shutterstock_147404390.jpg);
+*/
+    /*    linear-gradient(parametr-1,parametr-2), url()*/
+/*
+    background-image: url(http://polki.pl/foto/4_3_SMALL/czy-wiesz-dlaczego-pies-merda-ogonem-1559030.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+*/
+    background: url(http://polki.pl/foto/4_3_SMALL/czy-wiesz-dlaczego-pies-merda-ogonem-1559030.jpg) no-repeat;
+/*    background-size: cover;*/
+    overflow: auto;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+#tlo p{
+    font-size: 30px;
+}
 
 
