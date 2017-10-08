@@ -3,7 +3,7 @@
 }
 @media all and (max-width: 1024px) {
     #gallery figure {
-        width: 33%;
+        width: 32%;
     }
 }
 @media all and (max-width: 992px){
