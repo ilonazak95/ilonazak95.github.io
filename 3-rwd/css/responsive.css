@@ -1,0 +1,78 @@
+@media all and (min-width:1170px) {
+    #about {
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+        text-align: left;
+    }
+
+    #best,
+    p {
+        width: 100%;
+        color: white;
+    }
+    #naglowek {
+        vertical-align: middle;
+        top: 40%;
+        margin: 0 40px;
+    }
+    #best {
+        font-size: 30px;
+    }
+    p {
+        font-size: 40px;
+    }
+}
+
+/*992-1170*/
+
+@media all and (min-width:992px) and (max-width:1170px) {
+    #about {
+        height: 70vh;
+        background: url(../img/man-2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat:no-repeat;
+        text-align: left;
+    }
+
+    #best,
+    p {
+        width: 100%;
+        color: white;
+    }
+    #naglowek {
+        left: 60%;
+
+    }
+    #best {
+
+        font-size: 20px;
+    }
+    p {
+
+        font-size: 30px;
+
+    }
+}
+@media all and (max-width:992px) {
+    #about {
+        background: url(../img/man-1.jpg);
+        height: 50vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+    #naglowek {
+        left: 50%;
+        top: 50vh;
+        text-align: center;
+    }
+    #best {
+        font-size: 10px;
+    }
+    p{
+        font-size: 20px;
+    }
+    

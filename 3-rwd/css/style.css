@@ -1,0 +1,12 @@
+body {
+    margin: 0 0;
+    font-family: 'Verdana', sans-serif;
+}
+#about {
+    position: relative;
+    display: block;
+    background: url(../img/man-1.jpg);
+}
+#naglowek {
+    position: absolute;
+}
