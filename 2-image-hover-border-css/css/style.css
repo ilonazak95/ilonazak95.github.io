@@ -4,23 +4,60 @@ body {
 #zewnetrzny {
     position: relative;
     text-align: center;
-    display: block;
-    width: auto;
 }
-img {
+
+.kontener {
+    display: inline-block;
+    height: 360px;
+    width: 660px;
     padding: 5px;
-    width: 700px;
+    margin-top: 10px;
 }
 p {
     position: absolute;
-    display: block;
+    display: inline-block;
+    width: 660px;
+    transform: translate(-99%);
     top: 40%;
-    left: 328px;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
-    width: 710px;
-    background: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0, 0.6);
 }
-img:hover {
-    border: 2px solid black;
+.kontener::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 660px;
+    height: 0px;
+    top: 5px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.kontener::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 660px;
+    height: 0px;
+    bottom: 5px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.kontener::before,
+.kontener::after,
+ p:hover{
+    transition: all 0.5s linear;
+}
+.kontener:hover::before{
+    height: 50%;
+    border-bottom: none;
+    border-top: 2px solid black;
+}
+.kontener:hover::after {
+    height: 50%;
+    border-top: none;
+    border-bottom: 2px solid black;
+}
+p:hover{
+    font-size: 40px;
 }
