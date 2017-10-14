@@ -27,10 +27,17 @@ section{
     position: fixed;
     width: 100%;
     height: 50px;
-    background-color: white;
+    background-color: #fff;
  
     
 }
+#main-nav ul {
+    background-color: white;
+}
+#main-nav .toggle, [id="drop"]{
+    display: none;
+}
+
 #main-nav .menu{
     margin: 0;
     list-style-type: none;
