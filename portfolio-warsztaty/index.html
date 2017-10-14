@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--    main styles-->
     <link rel="stylesheet" href="css/style.css">
+    
+    
+<!--   google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400|Roboto:100,400&amp;subset=latin-ext" rel="stylesheet">
+<!--    font awesome-->
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!--    responsive styles-->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
 <!--   nav-->
    <nav id="main-nav">
@@ -31,15 +42,136 @@
       
        <h2>o <span>mnie</span> 
        </h2>
-       <figure>
+       <figure id="zdjecie-glowne">
            <img src="img/jan-nowak.jpg" alt="">
        </figure>
        <article class="about-info">
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quam, non perspiciatis dignissimos dolorum. Laboriosam voluptatem aliquam sit possimus, tempore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quam, non perspiciatis dignissimos dolorum. Laboriosam voluptatem aliquam sit possimus, tempore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quam, non perspiciatis dignissimos dolorum. Laboriosam voluptatem aliquam sit possimus, tempore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quam, non perspiciatis dignissimos dolorum. Laboriosam voluptatem aliquam sit possimus, tempore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quam, non perspiciatis dignissimos dolorum. Laboriosam voluptatem aliquam sit possimus, tempore?</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quam, non perspiciatis dignissimos dolorum. Laboriosam voluptatem aliquam sit possimus, tempore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quam, non perspiciatis dignissimos dolorum. Laboriosam voluptatem aliquam sit possimus, tempore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quam, non perspiciatis dignissimos dolorum. Laboriosam voluptatem aliquam sit possimus, tempore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quam, non perspiciatis dignissimos dolorum. Laboriosam voluptatem aliquam sit possimus, tempore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quam, non perspiciatis dignissimos dolorum. Laboriosam voluptatem aliquam sit possimus, tempore?
+           </p>
        </article>
-       <div class="clear"
-       ></div>
+       <div class="clear"></div>
+    </section>
+<!--       skills-->
+      <section id="skills">
+          
+          <h2>Moje <span>umiejętności</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur alias fugiat dolore id recusandae neque distinctio voluptate quisquam officiis, in voluptatum odio tenetur quas, dolor vero est cumque nobis ex.</p>
+          
+          <div id="skills-icons">
+            
+            <figure class="skills-icons-items">
+                <img src="icons/html5.png" alt="ikonahtml">
+                <figcaption>HTML5</figcaption>
+            </figure>
+            
+            <figure class="skills-icons-items">
+                <img src="icons/css3.png" alt="ikona css">
+                <figcaption>CSS3</figcaption>
+            </figure>
+            
+            <figure class="skills-icons-items">
+                <img src="icons/js.png" alt="ikona js">
+                <figcaption>JS</figcaption>
+            </figure>
+            
+            <figure class="skills-icons-items">
+                <img src="icons/jquery.png" alt="ikona jquery">
+                <figcaption>JQUERY</figcaption>
+            </figure>
+
+          </div>
+      </section>
+<!--   portfolio-->
+   <section id="portfolio">
+       
+       <h2>Moje <span>portfolio</span></h2>
+       
+       <div class="portfolio-items">
+           <div class="portfolio-item" id="portfolio-item-1">
+               <div class="item-mask">
+                   <div class="item-content">
+                       <div class="item-content-inner">
+                           <h3>Lorem ipsum dolor sit amet.</h3>
+                           <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati saepe error iusto, voluptatem nihil adipisci quis iste consequuntur cupiditate. Temporibus!</p>
+                           <h4>Wykorzystane technologie:</h4>
+                           <p class="project-technologies">HTML5, CSS3, RWD, JS</p>
+                               <a href="a" class="project-link">
+                               <i class="fa fa-link fa-2x"></i>
+                           </a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="portfolio-item" id="portfolio-item-2">
+               <div class="item-mask">
+                   <div class="item-content">
+                       <div class="item-content-inner">
+                           <h3>Lorem ipsum dolor sit amet.</h3>
+                           <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati saepe error iusto, voluptatem nihil adipisci quis iste consequuntur cupiditate. Temporibus!</p>
+                           <h4>Wykorzystane technologie:</h4>
+                           <p class="project-technologies">HTML5, CSS3, RWD, JS</p>
+                               <a href="a" class="project-link">
+                               <i class="fa fa-link fa-2x"></i>
+                           </a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="portfolio-item" id="portfolio-item-3">
+               <div class="item-mask">
+                   <div class="item-content">
+                       <div class="item-content-inner">
+                           <h3>Lorem ipsum dolor sit amet.</h3>
+                           <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati saepe error iusto, voluptatem nihil adipisci quis iste consequuntur cupiditate. Temporibus!</p>
+                           <h4>Wykorzystane technologie:</h4>
+                           <p class="project-technologies">HTML5, CSS3, RWD, JS</p>
+                               <a href="a" class="project-link">
+                               <i class="fa fa-link fa-2x"></i>
+                           </a>
+                       </div>
+                   </div>
+               </div>
+           </div>  
+       </div>
    </section>
+   
+
+<!--contact-->
+   <section id="contact">
+       <div class="contact-data">
+           <h2>Ilona <span>Żak</span></h2>
+           <address>
+               ul.Mostowa 6/13<br>
+               11-222-Warszawa <br><br>
+               tel: 123-456-789 <br>
+               email: <a href="mailto:kursy@wp.pl">
+                   kursy@wp.pl
+               </a>
+           </address>
+           <div class="contact-social-icons">
+               <a href="#"><i class="fa fa-facebook"></i></a>
+               <a href="#"><i class="fa fa-google-plus"></i></a>
+               <a href="#"><i class="fa fa-twitter"></i></a>
+               <a href="#"><i class="fa fa-linkedin"></i></a>
+           </div>
+       </div>
+       
+       <div class="contact-form">
+           <form action="">
+               <input type="text" name="name" placeholder="Imię i nazwisko">
+               <input type="email" name="email" placeholder="Adres email">
+               <textarea name="message" placeholder="Wiadomość"></textarea>
+               <input type="submit" value="Wyślij">
+           </form>
+       </div>
+   </section>
+    
+<!--footer-->
+  <footer>
+       <p id="copyright">Copyright &copy Ilona Żak</p>
+  </footer>  
     
     
 </body>
