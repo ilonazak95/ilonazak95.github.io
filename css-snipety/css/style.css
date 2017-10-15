@@ -177,3 +177,65 @@ footer {
         transform: scale(1);
     }
 }
+/*kurtyna przy ladowaniu strony*/
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color:bisque;
+    position: relative;
+}
+.curtain{
+    height: 50vh;
+    width: 100%;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.top {
+    background-color: firebrick;
+    animation-name: top-down;
+}
+
+.bottom {
+    position: absolute;
+    background-color: darkslategrey;
+    top: 50%;
+    animation-name: bottom-up;
+}
+@keyframes top-down {
+    0% {
+        height: 0vh;
+    }
+    100%{
+       height: 50vh; 
+    }
+}
+@keyframes bottom-up {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: 50%;
+    }
+}
+/*parallax*/
+section {
+    margin-bottom: 0px;
+}
+.content-section {
+    background-color: beige;
+    overflow: hidden;
+    padding: 100px;
+}
+.parallax {
+    background-image: url(../img/zdjecie-tlo-fb-092.jpg);
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.parallax-second {
+    background-image: url(../img/4925309ee0abfee29cbcc1b7d1c64a58.JPG);
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
