@@ -45,7 +45,9 @@ p {
 }
 .kontener::before,
 .kontener::after,
- p:hover{
+ p:hover,
+.kontener:hover::before,
+.kontener:hover::after {
     transition: all 0.5s linear;
 }
 .kontener:hover::before{
