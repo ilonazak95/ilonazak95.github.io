@@ -54,15 +54,48 @@ body{
 }
 
 /*font awesome jako znacznik listy*/
-#font-list {
+ul {
     list-style: none;
 }
-#font-list li{
+ul li{
     margin-bottom: 20px;
 }
-#font-list li::before {
+li.fa-hand-bullet::before {
     font-family: 'FontAwesome';
     content: "\f0a4";
     margin-right: 5px;
     color: forestgreen;
+}
+
+/*zmiana koloru czcionki placeholdera */
+input {
+    display:block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+input[type='text']:-ms-input-placeholder,
+input[type='email']:-ms-input-placeholder{
+    color: red;
+}
+input[type='text']::-moz-placeholder {
+    color: green;
+}
+input[type='email']::placeholder,
+input[type='text']::placeholder {
+    color: gold;
+}
+
+/*zmiana koloru dla linku z roznym rozszerzeniem*/
+a{
+    text-decoration: none;
+    line-height: 30px;
+}
+a[href$=".doc"]{
+    color: red;
+}
+a[href$=".docx"]{
+    color: yellow;
+}
+a:hover {
+    text-decoration: underline;;
 }
