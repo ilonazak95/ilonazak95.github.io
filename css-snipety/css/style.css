@@ -135,6 +135,7 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0px;
+    margin-bottom: 0;
     
 }
 /*powiekszanie zdjecia po najechaniu myszka*/
@@ -156,4 +157,23 @@ footer {
 }
 .img-container:hover .img-background {
     transform: scale(1.5);
+}
+/*bijace serce w napisie*/
+
+.heart-beat {
+    text-align: center;
+    font-size: 3em;
+}
+.fa-heart {
+    color: red;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
