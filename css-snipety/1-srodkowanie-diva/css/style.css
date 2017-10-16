@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+}
+#zewnetrzny {
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    position: relative;
+}
+#wewnetrzny {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    background-color: bisque;
+    top: 25%;
+    transform: translateX(50%);
+}
