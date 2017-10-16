@@ -1,0 +1,6 @@
+#gradient {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to right,red, orange, yellow,green,blue,violet);
+}
+/*zeby nadac kierunek gradientowi w nawasie podac najpierw to-(kierunek)*/
