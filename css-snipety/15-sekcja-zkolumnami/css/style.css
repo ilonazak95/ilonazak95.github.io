@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+.zewnetrzny-kontener {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.column {
+    height: 100vh;
+    width: 25%;
+    display: inline-block;
+    float: left;
+    transition: all 0.5s linear;
+}
+.background{
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.column:hover {
+    width: 40%;
+}
+.container:hover .column:not(:hover){
+    width: 20%;
+}
+#background-1{
+    background-color: aqua;
+}
+#background-2{
+    background-color: bisque;
+}
+#background-3{
+    background-color: aqua}
+#background-4{
+    background-color: bisque;
+}
