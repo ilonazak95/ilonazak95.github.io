@@ -1,0 +1,17 @@
+.heart-beat {
+    text-align: center;
+    font-size: 3em;
+}
+.fa-heart {
+    color: red;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
