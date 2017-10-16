@@ -1,0 +1,16 @@
+input {
+    display:block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+input[type='text']:-ms-input-placeholder,
+input[type='email']:-ms-input-placeholder{
+    color: red;
+}
+input[type='text']::-moz-placeholder {
+    color: green;
+}
+input[type='email']::placeholder,
+input[type='text']::placeholder {
+    color: gold;
+}
