@@ -1,0 +1,16 @@
+.button-font {
+    background-color: aquamarine;
+    border: 2px solid aquamarine;
+    border-radius: 50%;
+    line-height: 100px;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+}
+.button-font:hover{
+    background-color: white;
+    color: aquamarine;
+}
