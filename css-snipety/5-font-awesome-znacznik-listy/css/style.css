@@ -1,0 +1,12 @@
+ul {
+    list-style: none;
+}
+ul li{
+    margin-bottom: 20px;
+}
+li.fa-hand-bullet::before {
+    font-family: 'FontAwesome';
+    content: "\f0a4";
+    margin-right: 5px;
+    color: forestgreen;
+}
