@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+     overflow: hidden;
+}
+#responsive-video {
+    position: relative;
+    
+}
+#responsive-video video {
+    width: 100%;
+    max-width: 100%;
+   
+}
