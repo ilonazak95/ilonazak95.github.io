@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+#content {
+    height: 200vh;
+    width: 100%;
+    background: linear-gradient(to bottom,red,orange, yellow,green,blue);
+}
+footer {
+    height: 50px;
+    background-color: burlywood;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 0;
+    
+}
