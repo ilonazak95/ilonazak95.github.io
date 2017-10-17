@@ -16,8 +16,8 @@ body {
 p {
     position: absolute;
     display: inline-block;
-    width: 660px;
-    transform: translate(-99%);
+    width: 650px;
+    transform: translate(-100%);
     top: 40%;
     font-size: 30px;
     color: white;
@@ -30,8 +30,6 @@ p {
     width: 660px;
     height: 0px;
     top: 5px;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
 }
 .kontener::after {
     content: " ";
@@ -40,26 +38,25 @@ p {
     width: 660px;
     height: 0px;
     bottom: 5px;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
 }
-.kontener::before,
-.kontener::after,
- p:hover,
+
+.kontener:hover p,
 .kontener:hover::before,
 .kontener:hover::after {
-    transition: all 0.5s linear;
+    transition: all 1s linear;
 }
 .kontener:hover::before{
     height: 50%;
+    border: 2px solid black;
     border-bottom: none;
-    border-top: 2px solid black;
 }
 .kontener:hover::after {
     height: 50%;
+    border: 2px solid black;
     border-top: none;
-    border-bottom: 2px solid black;
 }
-p:hover{
+.kontener:hover p{
     font-size: 40px;
+    width: 660px;
+    transform: translate(-99%);
 }
