@@ -10,8 +10,12 @@ body {
     display: inline-block;
     height: 360px;
     width: 660px;
-    padding: 5px;
+    padding: 3px;
     margin-top: 10px;
+}
+img {
+    position: relative;
+    left: 2px;
 }
 p {
     position: absolute;
