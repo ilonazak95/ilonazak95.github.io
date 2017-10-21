@@ -14,6 +14,8 @@ console.log(osoba['imie']);
 
 osoba.przedstawOsobe();
 
+/*dodawanie wlasciwosci do obiektu*/
+
 osoba.nazwisko = 'Potocki';
 
 console.log(osoba.nazwisko);
