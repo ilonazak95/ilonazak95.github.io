@@ -30,7 +30,7 @@ for (var i = 0; i < allLinks.length; i++){
     var br = document.createElement('br');
     allLinks[i].parentNode.insertBefore(br, allLinks[i].nextSibling);
     allLinks[i].removeAttribute('class'); //usun atrybut klasy
-    allLinks[i].setAttribute('id', 'link-id-'+i); //dodaj atrybut
+    allLinks[i].setAttribute('id', 'link-id-'+i); //dodaj atrybut id
 }
 
 
