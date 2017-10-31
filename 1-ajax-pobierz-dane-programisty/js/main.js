@@ -5,7 +5,7 @@ $(function () {
     
         $("#przycisk").click(function(){
             console.log(data);
-            $("<div></div>").attr("id","dane-programisty").appendTo($("body"));
+            $("<div></div>").attr("id","dane-programisty").insertAfter("#przycisk");
         
             $("#dane-programisty").text("Imię : " + data.imie + ", " +
                                 "Nazwisko : " + data.nazwisko + ", " + 
