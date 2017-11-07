@@ -62,6 +62,7 @@ section{
     background: url("../img/header-background.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     position: relative;
 }
 #main-header .header-inner {

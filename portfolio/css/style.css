@@ -1,0 +1,246 @@
+/*general*/
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-header .section-title {
+    font-size: 2.5em;
+    font-weight: 100;
+    text-align: center;
+    padding: 30px 0;
+}
+
+section .section-header .section-title span {
+    color: lime;
+}
+
+section .section-header {
+    padding: 30px;
+}
+
+/*nawigacja*/
+
+#main-nav {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#main-nav .nav-item a {
+    color: lawngreen;
+    margin-right: 20px;
+    transition: all .5s;
+}
+
+#main-nav .nav-item a:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/*header*/
+
+#main-header {
+    background-image: url(../img/header-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+#main-header .header-inner {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+#main-header .header-inner h1 {
+    font-size: 5em;
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+#main-header .header-inner h1 span {
+    color: lime;
+}
+
+#main-header .header-inner h2 {
+    color: white;
+    font-size: 3em;
+    font-weight: 100;
+    transition: all 1s;
+}
+
+#main-header .header-inner h2:hover {
+    color: lime;
+}
+
+/*about*/
+
+#about {
+    background: #f9fcfe;
+}
+
+#about .about-image {
+    background-image: url(../img/jan-nowak.jpg);
+    height: 400px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 80px;
+    border: 0.5px solid lime;
+    border-radius: 10%;
+}
+
+#about .about-info {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.3em;
+}
+
+/*skills*/
+
+#skills .icons-items .skills-icons-items img {
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+/*portfolio*/
+
+#portfolio-item-1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+#portfolio-item-2 {
+    background-image: url(../img/portfolio2.jpg);
+}
+
+#portfolio-item-3 {
+    background-image: url(../img/portfolio3.jpg);
+}
+
+#portfolio .portfolio-items {
+    display: flex;
+    overflow: hidden;
+}
+
+#portfolio .portfolio-items .portfolio-item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+}
+
+#portfolio .portfolio-items .portfolio-item .item-mask {
+    height: 100%;
+    width: 100%;
+    background: rgba(42, 61, 79, 0.8);
+    transition: all 1s;
+    opacity: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .portfolio-items .portfolio-item:hover .item-mask {
+    opacity: 1;
+}
+
+#portfolio .portfolio-items .portfolio-item .item-mask .item-content {
+    border: 1px solid lime;
+    ;
+    margin: 10px;
+    height: 330px;
+    position: relative;
+}
+
+#portfolio .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner {
+    color: white;
+    position: absolute;
+    padding: 5px;
+}
+
+#portfolio .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner a {
+    color: white;
+}
+
+#portfolio .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner a:hover {
+    color: green;
+}
+
+/*contact*/
+
+#contact {
+    background-color: #213b50;
+    color: #fff;
+    overflow: hidden;
+}
+#contact .section-header address{
+    padding: 30px 0;
+}
+#contact .section-header address a {
+    color: #1ac056;
+}
+
+#contact .section-header .contact-social-icons a {
+    display: inline-block;
+    color: white;
+    height: 38px;
+    width: 38px;
+    text-align: center;
+    line-height: 38px;
+    border: 1px solid #fff;
+    margin-right: 30px;
+    font-size: 22px;
+}
+
+#contact .section-header .contact-social-icons a:hover {
+    color: #213b50;
+    border: 1px solid #213b50;
+    background-color: #fff;
+}
+#contact .contact-form{
+    display: flex;
+    align-items: center;
+}
+#contact .contact-form form input,
+#contact .contact-form form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #2b4a64;
+    border: #2b4a64 0px;
+    color: #fff;
+}
+
+#contact .contact-form form input:focus,
+#contact .contact-form form textarea:focus {
+    background-color: #426684;
+}
+
+#contact .contact-form input[type='submit'] {
+    background-color: #1ac056;
+    color: #fff;
+    width: auto;
+    padding: 15px 30px;
+    border: 1px #1ac056 solid;
+
+}
+
+#contact .contact-form input[type='submit']:hover {
+    background-color: #fff;
+    color: #1ac056;
+}
