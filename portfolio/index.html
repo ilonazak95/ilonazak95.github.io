@@ -3,88 +3,74 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>PORTFOLIO</title>
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <!--    main styles-->
+<!--    main styles-->
     <link rel="stylesheet" href="css/style.css">
 
-
-    <!--   google fonts-->
+<!--   google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400|Roboto:100,400&amp;subset=latin-ext" rel="stylesheet">
-    <!--    font awesome-->
+<!--    font awesome-->
     <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!--    responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-    <!--   nav-->
-    <!--
-   <nav id="main-nav">
-     
-      <label for="drop" class="toggle">Menu</label>
-      <input type="checkbox" id="drop" />
-      
-       <ul class="menu">
-           <li class="menu-item"><a href="#about">O mnie</a></li>
-           <li class="menu-item"><a href="#skills">Umiejętności</a></li>
-           <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
-           <li class="menu-item"><a href="#contact">Kontakt</a></li>
-       </ul>
-    </nav>
-    
--->
+<!--   nav-->
     <nav id="main-nav" class="navbar fixed-top navbar-expand-lg navbar-light">
         <a href="" class="navbar-brand"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
         </button>
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto justify-content-end w-100">
+            <ul class="navbar-nav mr-auto text-right justify-content-end w-100">
                 <li class="nav-item">
-                    <a href="#about">O mnie</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills">Umiejętności</a>
+                    <a href="#services">Services</a>
                 </li>
                 <li class="nav-item">
                     <a href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact">Kontakt</a>
+                    <a href="#about">About</a>
                 </li>
-
+                <li class="nav-item">
+                    <a href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
-
-    <!--    header-->
+<!--    header-->
     <section id="main-header">
         <div class="header-inner text-center">
             <h1>Ilona <span>Żak</span></h1>
             <h2>Front-End Developer</h2>
         </div>
     </section>
-
-    <!--    about-->
+    
+<!--    about-->
     <section id="about">
         <div class="container">
             <div class="row text-center section-header">
                 <h3 class="col section-title">O <span>mnie</span></h3>
             </div>
             <div class="row">
-                <div class="col-lg-6 text-right">
+                <div class="col-lg-6">
                     <div class="about-image"></div>
                 </div>
                 <div class="col-lg-6 text-left">
                     <article class="about-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit optio, asperiores placeat saepe autem facere enim iste! Optio placeat vel laboriosam nulla sint dolor saepe quo unde quia quas sapiente suscipit quaerat minus perferendis, at, accusantium, pariatur vitae, dolores perspiciatis deleniti amet. Velit, pariatur quidem quos animi maxime ratione consequatur! vel laboriosam nulla sint dolor saepe quo unde quia quas sapiente suscipit quaerat minus perferendis, at, accusantium, pariatur vitae, dolores perspiciatis deleniti amet. Velit, pariatur quidem quos animi maxime ratione consequatur</article>
                 </div>
-
             </div>
         </div>
     </section>
-    <!--       skills-->
-
+    
+<!--       skills-->
     <section id="skills">
         <div class="container">
             <div class="row text-center section-header">
@@ -104,72 +90,67 @@
                     <img src="icons/js.png" alt="ikona js">
                     <figcaption>JS</figcaption>
                 </figure>
-                <figure class="skills-icons-items col-sm-6 col-md-4 col-lg-3">
+                <figure class="skills-icons-items col-sm-6 col-md-12 col-lg-3">
                     <img src="icons/jquery.png" alt="ikona jquery">
                     <figcaption>JQUERY</figcaption>
                 </figure>
             </div>
         </div>
     </section>
-    <!--   portfolio-->
+    
+<!--   portfolio-->
     <section id="portfolio">
         <div class="container">
             <div class="row text-center section-header">
                 <h3 class="col section-title">Moje <span>portfolio</span></h3>
             </div>
             <div class="row text-center">
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <div class="portfolio-items">
-                        <div class="portfolio-item" id="portfolio-item-1">
-                            <div class="item-mask">
-                                <div class="item-content">
-                                    <div class="item-content-inner">
-                                        <h3>Lorem ipsum dolor sit amet.</h3>
-                                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati saepe error iusto, voluptatem nihil adipisci quis iste consequuntur cupiditate. Temporibus!</p>
-                                        <h4>Wykorzystane technologie:</h4>
-                                        <p class="project-technologies">HTML5, CSS3, RWD, JS</p>
-                                        <a href="a" class="project-link">
+                <div class="col-sm-12 col-md-12 col-lg-4 portfolio-items">
+                    <div class="portfolio-item" id="portfolio-item-1">
+                        <div class="item-mask">
+                            <div class="item-content">
+                                <div class="item-content-inner">
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
+                                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati saepe error iusto, voluptatem nihil adipisci quis iste consequuntur cupiditate. Temporibus!</p>
+                                    <h4>Wykorzystane technologie:</h4>
+                                    <p class="project-technologies">HTML5, CSS3, RWD, JS</p>
+                                    <a href="a" class="project-link">
                                        <i class="fa fa-link fa-2x"></i>
-                                       </a>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <div class="portfolio-items">
-                        <div class="portfolio-item" id="portfolio-item-2">
-                            <div class="item-mask">
-                                <div class="item-content">
-                                    <div class="item-content-inner">
-                                        <h3>Lorem ipsum dolor sit amet.</h3>
-                                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati saepe error iusto, voluptatem nihil adipisci quis iste consequuntur cupiditate. Temporibus!</p>
-                                        <h4>Wykorzystane technologie:</h4>
-                                        <p class="project-technologies">HTML5, CSS3, RWD, JS</p>
-                                        <a href="a" class="project-link">
+                <div class="col-sm-12 col-md-12 col-lg-4 portfolio-items">
+                    <div class="portfolio-item" id="portfolio-item-2">
+                        <div class="item-mask">
+                            <div class="item-content">
+                                <div class="item-content-inner">
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
+                                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati saepe error iusto, voluptatem nihil adipisci quis iste consequuntur cupiditate. Temporibus!</p>
+                                    <h4>Wykorzystane technologie:</h4>
+                                    <p class="project-technologies">HTML5, CSS3, RWD, JS</p>
+                                    <a href="a" class="project-link">
                                        <i class="fa fa-link fa-2x"></i>
-                                       </a>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <div class="portfolio-items">
-                        <div class="portfolio-item" id="portfolio-item-3">
-                            <div class="item-mask">
-                                <div class="item-content">
-                                    <div class="item-content-inner align-items-center">
-                                        <h3>Lorem ipsum dolor sit amet.</h3>
-                                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati saepe error iusto, voluptatem nihil adipisci quis iste consequuntur cupiditate. Temporibus!</p>
-                                        <h4>Wykorzystane technologie:</h4>
-                                        <p class="project-technologies">HTML5, CSS3, RWD, JS</p>
-                                        <a href="a" class="project-link">
+                <div class="col-sm-12 col-md-12 col-lg-4 portfolio-items">
+                    <div class="portfolio-item" id="portfolio-item-3">
+                        <div class="item-mask">
+                            <div class="item-content">
+                                <div class="item-content-inner">
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
+                                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati saepe error iusto, voluptatem nihil adipisci quis iste consequuntur cupiditate. Temporibus!</p>
+                                    <h4>Wykorzystane technologie:</h4>
+                                    <p class="project-technologies">HTML5, CSS3, RWD, JS</p>
+                                    <a href="a" class="project-link">
                                        <i class="fa fa-link fa-2x"></i>
-                                       </a>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -178,51 +159,51 @@
             </div>
         </div>
     </section>
-    <!--contact-->
+    
+<!--contact-->
     <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="section-header col-sm-12 col-md-12 col-lg-6">
-                    <h3 class="text-left section-title">Ilona <span>Żak</span></h3>
-                    <address>
-                       ul.Mostowa 6/13<br>
-                       11-222-Warszawa <br><br>
-                       tel: 123-456-789 <br>
-                       email: <a href="mailto:kursy@wp.pl"> kursy@wp.pl</a>
-                    </address>
-                    <div class="contact-social-icons">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="section-header text-left ">
+                        <h3 class="section-title text-left">Ilona <span>Żak</span></h3>
+                        <address>
+                           ul.Mostowa 6/13<br>
+                           11-222-Warszawa <br><br>
+                           tel: 123-456-789 <br>
+                           email: <a href="mailto:kursy@wp.pl"> kursy@wp.pl</a>
+                        </address>
+                        <div class="contact-social-icons ">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
-
                 <div class="col-sm-12 col-md-12 col-lg-6 text-center contact-form">
                     <form action="" class="text-uppercase">
                         <input type="text" name="name" placeholder="Imię i nazwisko">
                         <input type="email" name="email" placeholder="Adres email">
                         <textarea name="message" placeholder="Wiadomość"></textarea>
+                        <input type="submit" value="Wyślij" class="text-uppercase">
                     </form>
-                    <input type="submit" value="Send">
                 </div>
             </div>
         </div>
     </section>
 
 <!--footer-->
-    <!--
-  <footer>
-       <p id="copyright">Copyright &copy Ilona Żak</p>
-  </footer>  
--->
+    <footer>
+        <p id="copyright">Copyright &copy Ilona Żak</p>
+    </footer>
 
-    <!--   script-->
-    <!--    jQuery-->
+<!--   script-->
+<!--    jQuery-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!--    Popper.js-->
+<!--    Popper.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-    <!--    Bootstrap JS-->
+<!--    Bootstrap JS-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 
