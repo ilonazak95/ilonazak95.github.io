@@ -1,3 +1,11 @@
-@media all and(max-width:992px){
-
+@media all and ( max-width: 992px) {
+    #main-nav .navbar-collapse .navbar-nav{
+    text-align: right;
+    margin-top: 20px;
+    }
+    /*    contact section responsive*/
+    #contact .section-header,
+    #contact .section-header .section-title {
+        text-align: center;
+    }
 }
