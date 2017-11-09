@@ -5,7 +5,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 section {
-    padding: 60px 0;
+    padding-bottom: 60px;
 }
 section .section-header {
     padding: 30px;
@@ -36,14 +36,14 @@ section .section-header .section-title span {
    line-height: 50px;
 }
 #main-nav .navbar-collapse .navbar-nav a {
-    color: grey;
+    color: black;
     margin-right: 20px;
     transition: all .5s;
     text-decoration: none;
     font-size: 1.1em;
 }
 #main-nav .navbar-collapse .navbar-nav a:hover {
-    color: forestgreen;
+    color: #0AC92B;
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -112,14 +112,16 @@ section .section-header .section-title span {
     padding: 0;
 }
 #skills .icons-items{
-    padding: 0 160px;
+    padding: 0 20%;
 }
 #skills .icons-items .skills-icons-items img {
     margin-bottom: 15px;
 }
 
 /*portfolio*/
-
+#portfolio{
+    padding-bottom: 30px;
+}
 #portfolio-item-1 {
     background-image: url(../img/portfolio1.jpg);
 }

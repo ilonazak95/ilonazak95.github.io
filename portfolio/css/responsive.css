@@ -1,11 +1,44 @@
 @media all and ( max-width: 992px) {
-    #main-nav .navbar-collapse .navbar-nav{
+/*    nav section*/
+    #main-nav .navbar-collapse .navbar-nav {
     text-align: right;
     margin-top: 20px;
     }
-    /*    contact section responsive*/
+/*    skills section*/
+    #skills .icons-items {
+    padding: 0 5%;
+    }
+/*    contact section*/
     #contact .section-header,
     #contact .section-header .section-title {
-        text-align: center;
+    text-align: center;
+    }
+}
+
+@media all and (max-width: 768px) {
+/*    general*/
+    section {
+    padding-bottom: 30px;
+    }
+    section .section-header .section-title {
+    font-size: 2em;
+    }
+/*    nav section*/
+    #main-nav .navbar-collapse .navbar-nav a{
+    font-size: 1em;
+    }
+    #main-header .header-inner h1 {
+    font-size: 3.5em;
+    }
+    #main-header .header-inner h2 {
+    font-size: 2em;
+    }
+/*    about section*/
+    #about .about-image {
+    height: 350px;
+    width: 250px;
+    }
+    #about .about-info {
+    font-size: 1.2em;
     }
 }
