@@ -1,0 +1,32 @@
+section p {
+    font-size: 30px;  
+}
+
+section div {
+    height: 30px;
+    width: 150px;
+    background-color: lightgray;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sprzedaz {
+    margin-bottom: 20px;
+}
+.wzrost {
+    margin-left: 150px;
+    width: 50px;
+    visibility: hidden;
+}
+
+/*przycisk*/
+input {
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    background-color: ;
+    cursor: pointer;
+    border: 2px solid gold;
+    outline: 0;
+}
