@@ -11,13 +11,29 @@ section div {
     justify-content: center;
     align-items: center;
 }
-#sprzedaz {
-    margin-bottom: 20px;
+/*ikonki */
+.wzrost-kupna,
+.wzrost-sprzedazy,
+.spadek-kupna,
+.spadek-sprzedazy,
+.stala-wartosc{
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
-.wzrost {
-    margin-left: 150px;
-    width: 50px;
-    visibility: hidden;
+.wzrost-kupna,
+.wzrost-sprzedazy{
+    color: green;
+}
+.spadek-kupna,
+.spadek-sprzedazy{
+    color: red;
+}
+.stala-wartosc{
+    color: skyblue;
+}
+/*sprzedaz*/
+#sprzedaz {
+    margin-bottom: 40px;
 }
 
 /*przycisk*/
