@@ -1,0 +1,25 @@
+@import "zmienne";
+
+body {
+    background-color: $base-color;
+    color: $bg-color;
+}
+@mixin menu-nawigacyjne {
+    color: aquamarine;
+    font-size: 22px;
+}
+
+nav{
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        
+        li{
+            display: inline-block;
+            a{
+                @include menu-nawigacyjne;
+            }
+        }
+    }
+}
