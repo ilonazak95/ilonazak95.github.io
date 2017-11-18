@@ -1,0 +1,11 @@
+@mixin fa-header {
+    font-size: 2em;
+    float: left;
+    margin-right: 10px;
+}
+
+@mixin right-col-elements {
+    position: absolute;
+    right: 8%;
+    width: 370px;
+}
