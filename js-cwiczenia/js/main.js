@@ -3,20 +3,24 @@ $(document).ready(function () {
     $.getJSON('https://blockchain.info/pl/ticker', function (data) {
         $.each(data, function (key) {
             zbudujListeWalut(key);
-            przelicz(key);
         });
 
     });
-    //zbudujListeWalut
+    function pobierzBtc(ilosc,waluta){
+        $.getJSON('https://blockchain.info/tobtc?currency='+waluta+'&value='+ilosc, function(data){
+            $('span').text('Wartość BTC: ' + data);
+        });
+    }
     function zbudujListeWalut(waluta) {
-        $('#waluta').append('<option>' + waluta + '</option>');
-        $('option').attr("id", "wybrana-waluta");
+        $('#waluta').append('<option>'+waluta+'</option>');
     }
 
-    function przelicz(waluta, ilosc) {
-        
-
-    }
+    $('#oblicz').click(function(event){
+        event.preventDefault();
+        var ilosc = $('#ilosc').val();
+        var waluta = $('#waluta').val();
+        pobierzBtc(ilosc,waluta);
+    });
 
 
 });
