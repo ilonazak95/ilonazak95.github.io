@@ -1,0 +1,8 @@
+#team {
+    .team-description {
+        margin-top: 40px;
+    }
+    .img-circle {
+        @include img-circle;
+    }
+}

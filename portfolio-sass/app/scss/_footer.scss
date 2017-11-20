@@ -1,0 +1,27 @@
+#main-footer {
+    padding: 10px 0;
+
+    .copyright,
+    .footer-nav {
+        line-height: 50px;
+    }
+    .footer-nav {
+
+        .footer-nav-item {
+            display: inline-block;
+            margin-right: 10px;
+
+            a {
+                @include transition;
+                
+                color: $grey-color;
+                font-family: $montserrat-font;
+                text-decoration: none;
+
+                &:hover {
+                    color: $blue-color;
+                }
+            }
+        }
+    }
+}

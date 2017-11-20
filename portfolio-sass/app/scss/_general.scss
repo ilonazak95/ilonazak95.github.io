@@ -1,0 +1,55 @@
+body {
+    font-family: $main-font;
+    color: $grey-color;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.section-header {
+    margin-bottom: 70px;
+    text-align: center;
+    width: 100%;
+}
+
+.section-title {
+    font-family: $montserrat-font;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.section-caption {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-family: $montserrat-font;
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.social-link {
+    @include transition;
+    
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #222;
+    border: 1px solid #222;
+    border-radius: 50%;
+    font-size: 1.8em;
+    color: #fff;
+    margin: 5px;
+    display: inline-block;
+
+    &:hover {
+        @include border;
+        
+        background-color: $blue-color;
+        color: #fff;
+    }
+}

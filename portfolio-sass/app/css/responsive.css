@@ -1,0 +1,23 @@
+@media all and (max-width:992px) {
+    #main-header .header-inner h2{
+        font-size: 1.2em;
+    }
+     #main-header .header-inner h1{
+        font-size: 3em;
+    }
+    #main-nav .navbar-collapse .navbar-nav {
+        text-align: right;
+        margin-top: 20px;
+        line-height: 50px;
+        
+    }
+    #main-nav .navbar-collapse .navbar-nav a{
+        color: black;
+    }
+}
+
+@media all and (max-width:768px) {
+    #contact textarea {
+        margin-top: 30px;
+    }
+}

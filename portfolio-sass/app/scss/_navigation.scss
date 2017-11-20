@@ -1,0 +1,35 @@
+#main-nav {
+    margin-top: 15px;
+    a {
+        &.navbar-brand {
+            color: white;
+            font-family: $montserrat-font;
+            font-size: 2em;
+        }
+    }
+    .nav-item {
+        a {
+            @include transition;
+
+            color: #fff;
+            text-transform: uppercase;
+            font-family: $montserrat-font;
+            margin-right: 20px;
+
+            &:hover {
+                color: $blue-color;
+            }
+        }
+    }
+    .scroll {
+        background-color: rgba(14, 216, 214, 0.75);
+        
+        .nav-item {
+            a {
+                &:hover {
+                    color: $grey-color;
+                }
+            }
+        }
+    }
+}

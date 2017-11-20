@@ -1,0 +1,23 @@
+@mixin background {
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin border {
+    border: 1px solid $blue-color;
+}
+
+@mixin img-circle {
+    width: 100%;
+    border-radius: 50%;
+}
+
+@mixin center-items-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition {
+    transition: all .3s;
+}

@@ -1,0 +1,41 @@
+#main-header {
+    @include background;
+    @include center-items-grid;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/header/pictures_on_the_wall.jpg");
+    height: 100vh;
+    text-align: center;
+
+    .header-inner {
+        font-family: $montserrat-font;
+        position: absolute;
+        width: 100%;
+        h1 {
+            font-weight: 400;
+            font-size: 4em;
+            color: #fff;
+            margin: 45px 0;
+        }
+        h2 {
+            font-size: 2em;
+            font-family: 'Open Sans';
+            font-style: italic;
+            color: #fff;
+        }
+        .view-more {
+            @include transition;
+            @include border;
+            
+            background-color: $blue-color;
+            font-family: $montserrat-font;
+            color: #fff;
+            padding: 15px 30px;
+            &:hover {
+                @include border;
+                
+                background-color: #fff;
+                color: $blue-color;
+            }
+        }
+    }
+}

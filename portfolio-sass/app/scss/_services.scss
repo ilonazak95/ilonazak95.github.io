@@ -1,0 +1,19 @@
+#services {
+    .fa {
+        @include border;
+
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: $blue-color;
+        transition: all .8s;
+
+        &:hover {
+            color: $blue-color;
+            background-color: #fff;
+            transform: rotate(360deg);
+        }
+    }
+}
