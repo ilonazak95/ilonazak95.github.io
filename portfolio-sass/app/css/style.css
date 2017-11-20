@@ -47,12 +47,12 @@ h3 {
 #main-nav {
   margin-top: 15px; }
   #main-nav a.navbar-brand {
-    color: white;
+    color: #fff;
     font-family: "Montserrat", sans-serif;
     font-size: 2em; }
   #main-nav .nav-item a {
     transition: all .3s;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     margin-right: 20px; }
