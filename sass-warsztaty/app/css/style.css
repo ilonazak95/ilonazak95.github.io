@@ -10,7 +10,7 @@ header, section {
   width: 100%; }
 
 .container {
-  width: 1170px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -71,7 +71,7 @@ header {
     position: absolute;
     right: 8%;
     width: 370px;
-    top: 15%; }
+    top: 12%; }
   #form-section #main-form {
     background-color: #001d8a; }
     #form-section #main-form fieldset {

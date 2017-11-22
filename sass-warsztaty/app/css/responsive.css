@@ -1,0 +1,26 @@
+@media all and (max-width: 660px) {
+    .header-contact {
+        opacity: 0;
+    }
+}
+
+@media all and (max-width: 520px) {
+    #form-section .form-section-right h2,
+    #form-section #main-form h3 {
+        font-size: 1em;
+        text-align: center
+    }
+    #form-section .form-section-right {
+        left: 5%;
+        width: auto;
+    }
+    #form-section #main-form input[type='submit'] {
+        font-size: 1em;
+    }
+
+    footer {
+        width: 100%;
+        font-size: 0.75em;
+    }
+    
+}
