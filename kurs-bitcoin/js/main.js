@@ -6,14 +6,14 @@ $("#pobierz-dane").click(function () {
         $("#kupno-waluty").html(data.PLN.buy);
 
         if (ostatniKursKupna < kupno) {
-            $(".strzalka-kupna").append('<i class="fa fa-arrow-up" aria-hidden="true"></i>');
+            $(".strzalka-kupna").html('<i class="fa fa-arrow-up" aria-hidden="true"></i>');
             $(".fa-arrow-up").addClass("wzrost");
         } else if (ostatniKursKupna > kupno) {
-            $(".strzalka-kupna").append('<i class="fa fa-arrow-down" aria-hidden="true"></i>');
+            $(".strzalka-kupna").html('<i class="fa fa-arrow-down" aria-hidden="true"></i>');
             $(".fa-arrow-down").addClass("spadek");
 
         } else {
-            $(".strzalka-kupna").append('<i class="fa fa-minus" aria-hidden="true"></i>');
+            $(".strzalka-kupna").html('<i class="fa fa-minus" aria-hidden="true"></i>');
             $(".fa-minus").addClass("stala-wartosc");
         }
 
@@ -23,14 +23,14 @@ $("#pobierz-dane").click(function () {
         $("#sprzedaz-waluty").html(data.PLN.sell);
 
         if (ostatniKursSprzedazy < sprzedaz) {
-            $(".strzalka-sprzedazy").append('<i class="fa fa-arrow-up" aria-hidden="true"></i>');
+            $(".strzalka-sprzedazy").html('<i class="fa fa-arrow-up" aria-hidden="true"></i>');
             $(".fa-arrow-up").addClass("wzrost");
         } else if (ostatniKursSprzedazy > sprzedaz) {
-            $(".strzalka-sprzedazy").append('<i class="fa fa-arrow-down" aria-hidden="true"></i>');
+            $(".strzalka-sprzedazy").html('<i class="fa fa-arrow-down" aria-hidden="true"></i>');
             $(".fa-arrow-down").addClass("spadek");
 
         } else {
-            $(".strzalka-sprzedazy").append('<i class="fa fa-minus" aria-hidden="true"></i>');
+            $(".strzalka-sprzedazy").html('<i class="fa fa-minus" aria-hidden="true"></i>');
             $(".fa-minus").addClass("stala-wartosc");
         }
 
