@@ -1,58 +1,38 @@
-$(document).ready(function () {
-//    get json
+$("#pobierz-dane").click(function () {
     $.getJSON("https://blockchain.info/pl/ticker", function (data) {
-        console.log(data);
-        $("#kupno").text(data.PLN.buy);
-        $("#sprzedaz").text(data.PLN.sell);
-    })
+    //        kupno
+        var ostatniKursKupna = $("#kupno-waluty").html();
+        var kupno = (data.PLN.buy);
+        $("#kupno-waluty").html(data.PLN.buy);
 
-//    ajax
-    $("#pobierz-dane").click(function() {
-        $.ajax({
-            url: "https://blockchain.info/pl/ticker",
-            dataType: "json",
-            cache: false,
-            success: function (obj) {
+        if (ostatniKursKupna < kupno) {
+            $(".strzalka-kupna").append('<i class="fa fa-arrow-up" aria-hidden="true"></i>');
+            $(".fa-arrow-up").addClass("wzrost");
+        } else if (ostatniKursKupna > kupno) {
+            $(".strzalka-kupna").append('<i class="fa fa-arrow-down" aria-hidden="true"></i>');
+            $(".fa-arrow-down").addClass("spadek");
 
-                $('#kupno').data(obj.PLN.buy);
-                $("#sprzedaz").text(obj.PLN.sell);
-
-                aktualizacjaKupna(obj.PLN.buy);
-                aktualizacjaSprzedazy(obj.PLN.sell);
-                    
-            }
-        });
-
-
-    })
-
-    function aktualizacjaKupna(normalneKupno, noweKupno) {
-        if (normalneKupno < noweKupno) {
-            $('#kupno').append('<i class="fa fa-arrow-up" aria-hidden="true"></i>');
-            $(".fa-arrow-up").addClass("wzrost-kupna");
-        } else if (normalneKupno > noweKupno) {
-            $('#kupno').append('<i class="fa fa-arrow-up" aria-hidden="true"></i>');
-            $(".fa-arrow-up").addClass("wzrost-kupna");
         } else {
-            $('#kupno').append('<i class="fa fa-minus" aria-hidden="true"></i>')
+            $(".strzalka-kupna").append('<i class="fa fa-minus" aria-hidden="true"></i>');
             $(".fa-minus").addClass("stala-wartosc");
         }
 
-    }
+    //        sprzedaz
+        var ostatniKursSprzedazy = $("#sprzedaz-waluty").html();
+        var sprzedaz = (data.PLN.sell);
+        $("#sprzedaz-waluty").html(data.PLN.sell);
 
+        if (ostatniKursSprzedazy < sprzedaz) {
+            $(".strzalka-sprzedazy").append('<i class="fa fa-arrow-up" aria-hidden="true"></i>');
+            $(".fa-arrow-up").addClass("wzrost");
+        } else if (ostatniKursSprzedazy > sprzedaz) {
+            $(".strzalka-sprzedazy").append('<i class="fa fa-arrow-down" aria-hidden="true"></i>');
+            $(".fa-arrow-down").addClass("spadek");
 
-    function aktualizacjaSprzedazy(normalnaSprzedaz, nowaSprzedaz) {
-        if (normalnaSprzedaz < nowaSprzedaz) {
-            $('#sprzedaz').append('<i class="fa fa-arrow-up" aria-hidden="true"></i>');
-            $(".fa-arrow-up").addClass("wzrost-kupna");
-        } else if (normalnaSprzedaz > nowaSprzedaz) {
-            $('#sprzedaz').append('<i class="fa fa-arrow-down" aria-hidden="true"></i>');
-            $(".fa-arrow-down").addClass("spadek-kupna");
         } else {
-            $('#sprzedaz').append('<i class="fa fa-minus" aria-hidden="true"></i>')
+            $(".strzalka-sprzedazy").append('<i class="fa fa-minus" aria-hidden="true"></i>');
             $(".fa-minus").addClass("stala-wartosc");
         }
-    }
 
-
-});
+    })
+})

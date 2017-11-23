@@ -11,20 +11,18 @@
 <body>
     <h1>Aktualny kurs Bitcoin do PLN</h1>
 
-    <!--    kupno-->
-    <section id="kupno-waluty">
-        <p>Kupno</p>
-        <div id="kupno"></div>
-    </section>
-
-    <!--sprzedaz-->
-    <section id="sprzedaz-waluty">
-        <p>Sprzedaż</p>
-        <div id="sprzedaz"></div>
-    </section>
-    <!--przycisk-->
+<!--    kupno-->
+    <div>Kupno <br>
+        <p id="kupno-waluty"></p><span class="strzalka-kupna"></span>
+    </div>
+    <br>
+<!--sprzedaz-->
+    <div>Sprzedaż <br>
+        <p id="sprzedaz-waluty"></p><span class="strzalka-sprzedazy"></span>
+    </div>
+<!--przycisk-->
     <input type="button" id="pobierz-dane" value="Pobierz kurs Bitcoin">
-    
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/main.js"></script>
 </body>

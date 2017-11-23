@@ -1,40 +1,36 @@
-section p {
-    font-size: 30px;  
+* {
+    margin-left: 10px;
 }
-
-section div {
-    height: 30px;
-    width: 150px;
-    background-color: lightgray;
-    border: 1px solid gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+div {
+    font-size: 25px;
+    font-weight: 500;
+}
+div #kupno-waluty,
+div #sprzedaz-waluty {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+    width: 75px;
 }
 /*ikonki */
-.wzrost-kupna,
-.wzrost-sprzedazy,
-.spadek-kupna,
-.spadek-sprzedazy,
+.wzrost,,
+.spadek,
 .stala-wartosc{
     margin-left: 5px;
     margin-bottom: 5px;
 }
-.wzrost-kupna,
-.wzrost-sprzedazy{
+.wzrost{
     color: green;
 }
-.spadek-kupna,
-.spadek-sprzedazy{
+.spadek{
     color: red;
 }
 .stala-wartosc{
     color: skyblue;
 }
 /*sprzedaz*/
-#sprzedaz {
-    margin-bottom: 40px;
-}
+
 
 /*przycisk*/
 input {
@@ -45,4 +41,5 @@ input {
     cursor: pointer;
     border: 2px solid gold;
     outline: 0;
+    margin-top: 30px;
 }
